@@ -8,4 +8,8 @@ The input of word2vecPM is the collection P (for GSG) or M (for GBOW).
 
 ## Running word2vecPM 
 - Download this code and compile by running 'make -C ./word2vecPM'.
-- 
+- Prepare input.
+- run '' to generate word embeddings.
+
+## Preparing input
+- The input file's format for GSG and GBOW is actually very similar, the only different is the number of context. For example, 
