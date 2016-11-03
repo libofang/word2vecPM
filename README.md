@@ -1,6 +1,6 @@
 # word2vecPM
 
-This code implements the word2vecPM proposed in paper: [Bofang Li, Tao Liu, Zhe Zhao and Xiaoyong Du - **Investigating Different Context Types and Representations for Learning Word Embeddings**] (xx) 
+This code implements the word2vecPM proposed in paper: [Bofang Li, Tao Liu, Zhe Zhao and Xiaoyong Du - **Investigating Different Context Types and Representations for Learning Word Embeddings**] (xx) It learns word embeddings with GSG and GBOW. Note that word2vecPM is built upon [word2vecf](https://bitbucket.org/yoavgo/word2vecf), which is built upon [word2vec](http://code.google.com/p/word2vec). 
 
 
 ## Running word2vecPM 
@@ -40,7 +40,6 @@ discovers 121
 ```
 represents the vocabulary file. These files should be named as 'counts.words.vocab' and 'counts.contexts.vocab' for word vocabulary and context vocabulary respectively.
 
-Note that word2vecPM is built upon [word2vecf](https://bitbucket.org/yoavgo/word2vecf), which is built upon [word2vec](http://code.google.com/p/word2vec). Please visit their website for more detailed information.
 
 ## Generating input collection
 
@@ -49,4 +48,8 @@ The java code in ContextPairGenerator folder can be used for generating input co
 This code support the selection of context type (linear or dependency) and context representations (word or structured word). It also support the selection of which collection (P or M) to generate.
 
 Note that [Stanford CoreNLP](http://stanfordnlp.github.io/CoreNLP/) is needed for running this code.
+
+
+
+
 
