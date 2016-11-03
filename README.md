@@ -44,7 +44,7 @@ represents the vocabulary file. These files should be named as 'counts.words.voc
 
 # Generating input collection
 
-The java code in ContextPairGenerator folder can be used for generating input collection.
+The java code in ContextPairGenerator folder can be used for generating input collection. One can directly run this code for a simple example.
 
 One can select which context type (linear or dependency) and context representations (word or structured word) for word-context pairs. One can also choose the generated collection (for GSG or GBOW).
 
