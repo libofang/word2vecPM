@@ -2,7 +2,7 @@
 
 This code implements the word2vecPM proposed in paper: [Bofang Li, Tao Liu, Zhe Zhao and Xiaoyong Du - **Investigating Different Context Types and Representations for Learning Word Embeddings**] (xx) 
 
-Note that word2vecPM is built upon [word2vecf](https://bitbucket.org/yoavgo/word2vecf), which is built upon [word2vec](http://code.google.com/p/word2vec). The contributors to word2vecf and word2vec deserve 88% of the credit for implementation.
+Note that word2vecPM is built upon [word2vecf](https://bitbucket.org/yoavgo/word2vecf), which is built upon [word2vec](http://code.google.com/p/word2vec). The contributors to word2vecf and word2vec deserve 88% of the credit for this code.
 
 
 ## Running word2vecPM 
