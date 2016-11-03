@@ -34,7 +34,7 @@ discovers scientist star telescope @
 star discovers @
 telescope discovers @
 ```
-represents the input of collection D. This file should be named as 'pairs'.
+represents the input of collection M. This file should be named as 'pairs'.
 - The vocabularity of word and context from the input collection is also required. For example, 
 ```
 australian 343
