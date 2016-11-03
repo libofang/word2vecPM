@@ -42,7 +42,7 @@ discovers 121
 ```
 represents the vocabulary file. These files should be named as 'counts.words.vocab' and 'counts.contexts.vocab' for word vocabulary and context vocabulary respectively.
 
-# Generating input collection
+## Generating input collection
 
 The java code in ContextPairGenerator folder can be used for generating input collection. One can directly run this code for a simple example.
 
