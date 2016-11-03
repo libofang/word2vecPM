@@ -46,5 +46,6 @@ represents the vocabulary file. These files should be named as 'counts.words.voc
 # Generating input collection
 
 The java code in ContextPairGenerator folder can be used for generating input collection.
-It support linear and dependency context type, as well as two context representations. It also support the input collection for GSG and GBOW
+It support linear and dependency context type, as well as two context representations. It also support the input collection for GSG and GBOW.
+Note than [Stanford CoreNLP](http://stanfordnlp.github.io/CoreNLP/) is needed for running this code.
 
