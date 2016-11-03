@@ -15,14 +15,23 @@ word2vecPM/word2vecPM -train ${ddir}/pairs -min-count 100 -iters 3 -pow 0.75 -cv
 ```
 
 ## Preparing input
-- The input file's format for GSG and GBOW is actually very similar, the only different is the number of context.
+- The input file's format for GSG and GBOW is actually very similar, each line represent an element of the input collection. For example, 
 ```
 australian scientist @
 scientist australian @
-(scientist discovers @
+scientist discovers @
 discovers scientist @
-(discovers star @
-(discovers telescope @
+discovers star @
+discovers telescope @
 star discovers @
 telescope discovers @
 ```
+represents the input of collection P, and
+```
+australian scientist @
+scientist australian discovers @
+discovers scientist, star telescope @
+star discovers @
+telescope discovers @
+```
+represents the input of collection D.
