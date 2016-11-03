@@ -30,8 +30,16 @@ represents the input of collection P, and
 ```
 australian scientist @
 scientist australian discovers @
-discovers scientist, star telescope @
+discovers scientist star telescope @
 star discovers @
 telescope discovers @
 ```
 represents the input of collection D.
+- The vocabularity of the input collection is also required. For example, 
+```
+australian 343
+scientist 4333
+discovers 121
+```
+represents the vocabulary file.
+
