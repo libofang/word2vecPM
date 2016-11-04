@@ -25,7 +25,7 @@ import edu.stanford.nlp.util.CoreMap;
 
 public class ContextPairGenerator {
 	String type; //linear or dependency //use -n to indicate the number of window size
-	String rep; //word or structured
+	String rep; //word or bound
 	String model; //skip or cbow
 	
 	
@@ -64,7 +64,7 @@ public class ContextPairGenerator {
 					for (int t = l; t <= r; t++)
 						if (t != i) {
 							String wt = wordList.get(t).word();
-							if (rep.equals("structured")) {
+							if (rep.equals("bound")) {
 								if (t > i)
 									wt += "+" + (t - i);
 								else
@@ -114,7 +114,7 @@ public class ContextPairGenerator {
 									e = eList.get(0);
 									w = e.getGovernor().word();
 								}
-								if (rep.equals("structured")) {
+								if (rep.equals("bound")) {
 									w += "/" + e.getRelation();
 									if (bi == 1)
 										w += "-1";
@@ -136,7 +136,7 @@ public class ContextPairGenerator {
 	}
 
 	public static void main(String args[]) {
-		System.out.println(new ContextPairGenerator("dependency-1", "structured", "cbow")
+		System.out.println(new ContextPairGenerator("dependency-1", "bound", "cbow")
 				.contextPairs("Australian scientist discovers star with telescope"));
 	}
 }
