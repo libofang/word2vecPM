@@ -1,10 +1,10 @@
 # word2vecPM
 
-This code implements the word2vecPM proposed in paper: [Bofang Li, Tao Liu, Zhe Zhao and Xiaoyong Du - **Investigating Different Context Types and Representations for Learning Word Embeddings**] (http://openreview.net/forum?id=Bkfwyw5xg). It learns word embeddings with GSG and GBOW. Note that word2vecPM is built upon [word2vecf](https://bitbucket.org/yoavgo/word2vecf), which is built upon [word2vec](http://code.google.com/p/word2vec). 
+This code implements the word2vecPM proposed in paper: [Bofang Li, Tao Liu, Zhe Zhao and Xiaoyong Du - **Investigating Different Context Types and Representations for Learning Word Embeddings**] (http://openreview.net/forum?id=Bkfwyw5xg). It allows Skip-Gram, CBOW and GloVe models learn word embeddings using different context types and representations. Note that word2vecPM is built upon [word2vecf](https://bitbucket.org/yoavgo/word2vecf), which is built upon [word2vec](http://code.google.com/p/word2vec). The code for GloVe is build upon [GloVe](https://github.com/stanfordnlp/GloVe). It's their transparent and reproducible works that makes this repository possible!
 
 
 ## Run generalized Skip-Gram and CBOW
-- Download the folder word2vecPM and compile by running 'make -C ./word2vecPM'.
+- Download the files in 'word2vecPM' folder and compile by running 'make -C ./word2vecPM'.
 - Prepare inputs (see next few sections).
 - run the following code to generate word embeddings. (${ddir} indicate the input path)
 ```Bash
@@ -12,11 +12,11 @@ word2vecPM/word2vecPM -train ${ddir}/pairs -min-count 100 -iters 3 -pow 0.75 -cv
 ```
 
 ## Run generalized GloVe
-- Download the folder GGloVe
+- Download the files in 'GGloVe' folder.
 - Prepare inputs (see next few sections).
 - run the following code to generate word embeddings. (Again, ${ddir} indicate the input path)
 ```Bash
-./demo.sh -train ${ddir}
+./demo.sh ${ddir}
 ```
 
 
@@ -49,7 +49,8 @@ scientist 4333
 discovers 121
 ```
 represents the vocabulary file. These files should be named as 'counts.words.vocab' and 'counts.contexts.vocab' for word vocabulary and context vocabulary respectively.
-### Glove
+### GloVe
+Our implementation of GloVe uses the same collection P ('pairs' file) as GSG and merge it to form colection \overline{M}, so nothing need to be change. However, since GloVe do not distinguish word and context, the vocabularity files should be merge to form 'counts.vocab', which uses the exactly same format as 'counts.words.vocab' and 'counts.contexts.vocab'.
 
 
 ## Generating input
