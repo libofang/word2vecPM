@@ -53,9 +53,9 @@ represents the vocabulary file. These files should be named as 'counts.words.voc
 Our implementation of GloVe uses the same collection P ('pairs' file) as GSG and merge it to form colection \overline{M}, so nothing need to be change. However, since GloVe do not distinguish word and context, the vocabularity files should be merge to form 'counts.vocab', which uses the exactly same format as 'counts.words.vocab' and 'counts.contexts.vocab'.
 
 
-## Generating input
+## Generate input
 
-The java code in ContextPairGenerator folder can be used for generating input collection. One can directly run this code to see a simple example.
+The java code in 'ContextPairGenerator' folder can be used for generating input collection. One can directly run this code to see a simple example.
 
 This code support the selection of context type (linear or dependency-based) and context representations (word or bound word). It also support the selection of which collection (P or M) to generate.
 
