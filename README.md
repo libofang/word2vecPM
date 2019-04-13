@@ -14,7 +14,7 @@ word2vecPM/word2vecPM -train ${ddir}/pairs -min-count 100 -iters 3 -pow 0.75 -cv
 ```
 
 ## Run generalized GloVe
-- Download the files in 'GGloVe' folder.
+- Download the files in 'GloVe' folder.
 - Prepare inputs (see next few sections).
 - run the following code to generate word embeddings. (Again, ${ddir} indicate the input path)
 ```Bash
