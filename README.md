@@ -24,7 +24,7 @@ word2vecPM/word2vecPM -train ${ddir}/pairs -min-count 100 -iters 3 -pow 0.75 -cv
 
 ## Inputs format
 ### GSG and GBOW
-- The input file's format for GSG and GBOW is actually very similar, each line represent an element of the input collection. For example, 
+- The input file's format for GSG and GBOW is actually very similar, each line represent an element of the input collection. @ is a special end of the line symble. For example, 
 ```
 australian scientist @
 scientist australian @
